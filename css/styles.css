@@ -1,0 +1,19 @@
+/* основной цвет #212121 */
+/* дополнительныe цвета:
+    p - #757575 
+    h1 - #FFFFFF 
+ */
+/* акцент #2196F3 */
+
+:root {
+    --primary-text-color: #212121;
+    --p-text-color: #757575;
+    --h1-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto', Raleway, sans-serif;
+    color: var(--primary-text-color);
+}
+
