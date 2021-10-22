@@ -4,6 +4,7 @@
         p - #757575 
         h1 - #FFFFFF 
         hero bg color - #2F303A
+        button bg color - #F5F4FA
     акцент #2196F3 
 */
 
@@ -11,6 +12,7 @@
     --primary-text-color: #212121;
     --p-text-color: #757575;
     --white-text-color: #FFFFFF;
+    --button-bg-color: #F5F4FA;
     --accent-color: #2196F3;
 }
 
@@ -57,7 +59,7 @@ body {
 }
 
 .list .item-text {
-    font-weight: normal;
+    /* font-weight: normal; */
     font-size: 14px;
     line-height: 24px;
     /* or 171% */
@@ -111,6 +113,10 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 .hero {
     /* position: absolute;
     width: 1600px;
@@ -158,3 +164,17 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* .section-title-hidden {
+
+} */
+
+.list .item.button {
+    background-color: var(--button-bg-color);
+}
+
+
+.list .item.button:hover, 
+.list .item.button:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
