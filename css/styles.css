@@ -49,8 +49,22 @@ body {
 
 .list .item-title {
     /* color: var(--primary-text-color); */
-
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
+
+.list .item-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--p-text-color);
+}
+
 
 /* ССЫЛКИ */
 .link {
@@ -125,7 +139,7 @@ body {
     /* color: var(--white-text-color); */
 }
 
-.hero-button {
+.button.primary {
     /* position: absolute; */
     width: 200px;
     height: 50px;
