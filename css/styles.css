@@ -1,14 +1,16 @@
-/* основной цвет #212121 */
-/* дополнительныe цвета:
-    p - #757575 
-    h1 - #FFFFFF 
- */
-/* акцент #2196F3 */
+/*  
+    основной цвет #212121 
+    дополнительныe цвета:
+        p - #757575 
+        h1 - #FFFFFF 
+        hero bg color - #2F303A
+    акцент #2196F3 
+*/
 
 :root {
     --primary-text-color: #212121;
     --p-text-color: #757575;
-    --h1-text-color: #FFFFFF;
+    --white-text-color: #FFFFFF;
     --accent-color: #2196F3;
 }
 
@@ -17,12 +19,21 @@ body {
     color: var(--primary-text-color);
 }
 
-body a {
-    text-decoration: none;
-}
-
+/* ------- ЛОГОТИП -------- */
 .logo {
     color: var(--primary-text-color);
+    /* position: absolute; */
+    width: 145px;
+    height: 31px;
+    /* left: 215px;
+    top: 24px; */
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
 }
 
 .logo span {
@@ -30,13 +41,49 @@ body a {
     font-family: Raleway, sans-serif;
 }
 
-ul {
+/* -------- СПИСКИ -------- */
+.list {
     list-style: none;
+    /* color: var(--primary-text-color); */
 }
 
-/* .link {
+.list .item-title {
+    /* color: var(--primary-text-color); */
+
+}
+
+/* ССЫЛКИ */
+.link {
     text-decoration: none;
-} */
+}
+
+.site-nav {
+    /* position: absolute; */
+    /* width: 77px;
+    height: 16px; */
+    /* left: 552px;
+    top: 32px; */
+    /* font-family: Roboto; */
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav {
+    /* position: absolute; */
+    /* width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px; */
+    /* font-family: Roboto;
+    font-style: normal; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
 
 .site-nav .link,
 .auth-nav .link {
@@ -48,5 +95,52 @@ ul {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
+}
+
+.hero {
+    /* position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background: #2F303A; */
+}
+
+.hero-title {
+    /* position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px; */
+    /* font-family: Roboto;
+    font-style: normal; */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    /* text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; */
+
+    /* color: var(--white-text-color); */
+}
+
+.hero-button {
+    /* position: absolute; */
+    width: 200px;
+    height: 50px;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    /* left: 700px; */
+    /* top: 430px; */
+}
+
+.section-title {
+    /* color: var(--primary-text-color); */
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
