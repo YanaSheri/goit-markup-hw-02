@@ -22,33 +22,17 @@ body {
 }
 
 /* ------- ЛОГОТИП -------- */
-.logo {
+.logo-link {
     color: var(--primary-text-color);
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-}
-
-.logo .span {
-    color: var(--accent-color);
-}
-
-
-/* -------- ВСЕ СПИСКИ -------- */
-.list {
-    list-style: none;
-    /* color: var(--primary-text-color); */
-}
-
-/* -------- ВСЕ ССЫЛКИ -------- */
-.link {
     text-decoration: none;
 }
 
-/* -------- ВСЕ КНОПКИ -------- */
-.button {
-    cursor: pointer;
+.logo-link .span {
+    color: var(--accent-color);
 }
 
 
@@ -59,13 +43,16 @@ body {
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    list-style: none;
 }
 
-.site-nav .link {
+.site-nav .link,
+.site-nav .link-current {
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 
-.site-nav .link.current {
+.site-nav .link-current {
     color: var(--accent-color);
 }
 
@@ -76,6 +63,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 /* - ЭФФЕКТЫ ИНТЕРАКТИВНЫХ ЭЛЕМЕНТОВ ШАПКИ - */
@@ -106,7 +94,7 @@ body {
 }
 
 /* КНОПКА ГЕРОЯ */
-.button.primary {
+.button-primary {
     /* font-family: Roboto; */
     font-weight: bold;
     font-size: 16px;
@@ -116,6 +104,7 @@ body {
     height: 50px;
     color: var(--white-text-color);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 /* -------- СЕКЦИИ -------- */
@@ -128,14 +117,13 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* СКРЫТЫЕ ЗАГОЛОВКИ СЕКЦИЙ */
-/* .section-title.hidden {
-} */
-
-
 /* === страница ГЛАВНАЯ === */
 
 /* СЕКЦИЯ "ОСОБЕННОСТИ" */
+.list {
+    list-style: none;
+}
+
 .list .item-title {
     font-size: 14px;
     line-height: 1.15;
@@ -151,7 +139,11 @@ body {
 }
 
 /* СЕКЦИЯ "НАША КОМАНДА" */
-.team .name {
+.team-list {
+    list-style: none;
+}
+
+.team-list .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -160,7 +152,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.team .title {
+.team-list .title {
     font-size: 16px;
     line-height: 1.2;
     /* text-align: center; */
@@ -170,7 +162,7 @@ body {
 
 /* === страница ПОРТФОЛИО === */
 /* ФИЛЬТР */
-.list .item.button {
+.list .item-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -178,16 +170,20 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--button-bg-color);
+    cursor: pointer;
 }
 
-.list .item.button:hover, 
-.list .item.button:focus {
+.list .item-button:hover, 
+.list .item-button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
 }
 
 /* ЗАГОЛОВКИ КАРТОЧЕК */
-.link-title {
+.card-link {
+    text-decoration: none;
+}
+.card-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -219,6 +215,7 @@ body {
     letter-spacing: 0.03em;
     /* color: rgba(255, 255, 255, 0.6); */ 
     color: var(--p-text-color);
+    text-decoration: none;
 }
 
 .contacts:hover,
