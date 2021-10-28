@@ -3,7 +3,7 @@
     дополнительныe цвета:
         p - #757575 
         h1 - #FFFFFF 
-        hero bg color - #2F303A
+        hero and footer bg color - #2F303A
         button bg color - #F5F4FA
     акцент #2196F3 
 */
@@ -14,10 +14,11 @@
     --white-text-color: #FFFFFF;
     --button-bg-color: #F5F4FA;
     --accent-color: #2196F3;
+    --hero-and-footer-bg-color: #2F303A;
 }
 
 body {
-    font-family: 'Roboto', Raleway, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
 
@@ -77,9 +78,9 @@ body {
 
 /* =========== К О Н Т Е Н Т =========== */
  /* -------- ГЕРОЙ -------- */
-/* .hero {
-    background: #2F303A;
-} */
+.hero {
+    background: var(--hero-and-footer-bg-color);
+}
 
 /* ЗАГОЛОВОК ГЕРОЯ */
 .hero-title {
@@ -89,12 +90,12 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: var(--white-text-color); */
+    color: var(--white-text-color);
 }
 
 /* КНОПКА ГЕРОЯ */
 .button-primary {
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.9;
@@ -162,6 +163,7 @@ body {
 /* === страница ПОРТФОЛИО === */
 /* ФИЛЬТР */
 .list .item-button {
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -198,13 +200,23 @@ body {
 }
 
 /* ================== FOOTER ===================== */
+/* ФОН ФУТЕРА */
+.footer {
+    background-color: var(--hero-and-footer-bg-color);
+}
+
+/* ЛОГО ФУТЕРА = Studio*/
+.span-footer {
+    color: var(--white-text-color);
+}
+
 /* АДРЕСС */
 .address {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    /* color: var(--white-text-color); */
+    color: var(--white-text-color);
 }
 
 /* КОНТАКТЫ */
@@ -212,8 +224,8 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    /* color: rgba(255, 255, 255, 0.6); */ 
-    color: var(--p-text-color);
+    color: rgba(255, 255, 255, 0.6); 
+    /* color: var(--p-text-color); */
     text-decoration: none;
 }
 
